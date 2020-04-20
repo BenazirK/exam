@@ -2,11 +2,9 @@
 
 {% block content%}
     <h2>Добавить изображение</h2>
-    <form action="{{ url_for('gallery') }}" method="POST">
+    <form action="{{ url_for('reciever') }}" method="POST">
         <div class="input-group mb-3 input-group-lg">
-            <div class="input-group-prepend">
-            </div>
-            <input type="url" name="image"  class="form-control">
+            <input type="text"placeholder="URL изображения" name="url"  class="form-control">
             <button type = "submit" class = "btn btn-outline-dark btn-lg" >Добавить</button>
         </div>
 
