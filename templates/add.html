@@ -3,10 +3,13 @@
 {% block content%}
     <h2>Добавить изображение</h2>
     <form action="{{ url_for('reciever') }}" method="POST">
-        <div class="input-group mb-3 input-group-lg">
-            <input type="text"placeholder="URL изображения" name="url"  class="form-control">
-            <button type = "submit" class = "btn btn-outline-dark btn-lg" >Добавить</button>
+        <div class="form-group">
+            <input class="form-control" type="text" name="url" placeholder="URL изображения">
         </div>
+        <div class="form-group">
+            <textarea name="description" class="form-control" rows="5" placeholder="Описание"></textarea>
+        </div>
+        <button type = "submit" class = "btn btn-outline-dark btn-lg" >Добавить</button>
 
 
 

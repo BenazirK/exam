@@ -3,9 +3,10 @@
 
 {% block content %}
 <div>
-    {% for url in urls %}
+    {% for image in images %}
         <div>
-            <img src="{{ url }}">
+            <h4>{{ image.0 }}</h4>
+            <img src="{{ image.1 }}">
         </div>
     {% endfor %}
 </div>
